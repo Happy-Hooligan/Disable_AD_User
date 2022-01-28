@@ -12,6 +12,7 @@ You'll need to update some values for this script. The import path for your cred
 
 You can check the license name, by running these commands:
 Connect-MsolService
+
 Get-MsolUser -UserPrincipalName Licensed_User@company.com | select name,licenses
 
 Enjoy!
