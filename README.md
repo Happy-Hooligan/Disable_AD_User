@@ -11,6 +11,7 @@ This will disable the user, remove all their permission except "domain users," m
 You'll need to update some values for this script. The import path for your credentials (can also swap it out for get-credential), the OU path for the disabled user and the license name for removal. The license name will probably be something like companyname:ENTERPRISEPACK (if it's an office 365 Office Suite license)
 
 You can check the license name, by running these commands:
+
 Connect-MsolService
 
 Get-MsolUser -UserPrincipalName Licensed_User@company.com | select name,licenses
